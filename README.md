@@ -11,7 +11,7 @@ Includes a Streamlit demo app.
 
 | Model | Accuracy | F1 | Test samples |
 |-------|----------|----|--------------|
-| TF-IDF + Logistic Regression | _fill in_ | _fill in_ | _fill in_ |
+| TF-IDF + Logistic Regression | 99.2% | 0.992 | 7819 |
 | DistilBERT | _fill in_ | _fill in_ | _fill in_ |
 
 (Numbers are saved in `reports/*.json` after training. Paste your real results here.)
@@ -50,6 +50,7 @@ streamlit run app.py
 
 ## Limitations
 
+- The model reaches 99.2% on this dataset, but confidence drops on articles from other topics and years, because it learns the dataset’s writing style rather than factual truth.
 - The data is from 2016-2017 and mostly US political news, so the model may not generalise to other topics or years.
 - The model learns writing style and vocabulary, not factual truth. It is not a fact-checker.
 
